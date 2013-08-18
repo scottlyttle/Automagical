@@ -182,7 +182,7 @@
 				<key>isViewVisible</key>
 				<false/>
 				<key>location</key>
-				<string>463.500000:501.000000</string>
+				<string>463.500000:472.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Ask for Text.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
@@ -290,7 +290,7 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>463.500000:459.000000</string>
+				<string>463.500000:430.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Set Value of Variable.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
@@ -352,23 +352,7 @@ unzip latest.zip
 cp -R wordpress/* .
 rm latest.zip
 rm -rf wordpress
-rm readme.html
-rm license.txt
-cd wp-includes &amp;&amp; touch .htaccess &amp;&amp; echo "&lt;Files *.php&gt;
-deny from all
-&lt;/Files&gt;
-&lt;Files wp-tinymce.php&gt;
-allow from all
-&lt;/Files&gt;
-&lt;Files ms-files.php&gt;
-allow from all
-&lt;/Files&gt;" &gt;&gt; .htaccess
-cd ../wp-content &amp;&amp; touch .htaccess &amp;&amp; echo "&lt;Files *.php&gt;
-deny from all
-&lt;/Files&gt;
-&lt;Files input.php&gt;
-allow from all
-&lt;/Files&gt;" &gt;&gt; .htaccess</string>
+rm readme.html &amp;&amp; rm license.txt</string>
 					<key>CheckedForUserDefaultShell</key>
 					<true/>
 					<key>inputMethod</key>
@@ -483,7 +467,7 @@ allow from all
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>463.500000:354.000000</string>
+				<string>463.500000:325.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
@@ -493,19 +477,19 @@ allow from all
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>D616C726-47D6-4FB5-99BD-4DA03CB396C0</key>
-		<dict>
-			<key>from</key>
-			<string>6E1466B3-6090-4A91-ACF1-2DF16B19E47E - 6E1466B3-6090-4A91-ACF1-2DF16B19E47E</string>
-			<key>to</key>
-			<string>18D51F9B-5FA0-4AC7-8669-A40F7B723554 - 18D51F9B-5FA0-4AC7-8669-A40F7B723554</string>
-		</dict>
-		<key>E24AC277-9424-412B-B5AA-A7B26F73DAC1</key>
+		<key>33A40CE9-68BC-4166-AF06-17FEC877168E</key>
 		<dict>
 			<key>from</key>
 			<string>9DE80039-D0D3-4DA5-8A01-927527EDE2BD - 9DE80039-D0D3-4DA5-8A01-927527EDE2BD</string>
 			<key>to</key>
 			<string>6E1466B3-6090-4A91-ACF1-2DF16B19E47E - 6E1466B3-6090-4A91-ACF1-2DF16B19E47E</string>
+		</dict>
+		<key>580CE12C-E936-407D-AA70-0E26D9D39482</key>
+		<dict>
+			<key>from</key>
+			<string>6E1466B3-6090-4A91-ACF1-2DF16B19E47E - 6E1466B3-6090-4A91-ACF1-2DF16B19E47E</string>
+			<key>to</key>
+			<string>18D51F9B-5FA0-4AC7-8669-A40F7B723554 - 18D51F9B-5FA0-4AC7-8669-A40F7B723554</string>
 		</dict>
 	</dict>
 	<key>variables</key>
